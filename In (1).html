@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+< name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>The Refuel Core | Robot Smoothie Bar</title>
+    <style>
+        /* General Styles */
+        body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+         padding: 0;
+      line-height: 1.6;
+            color: #e0e6ed;
+  background-image:url(Robotfuel.jpg);
+            background-image:url(Images.jpg);
+     Deep Space Blue */
+    scroll-behavior: smooth;  }
+
+        /* Navigation */
+        nav {
+  background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #1e293   }
+
+    nav a {
+            color: #00d2ff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;    }
+  nav a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #00d2ff;  }
+
+        /* Hero Section */
+  header {
+            height: 90vh;
+            background: linear-gradient(rgba(11, 15, 26, 0.8), rgba(11, 15, 26, 0.8)), 
+   url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1000');
+   background-size: cover;
+     background-position: center;       display: flex;
+            flex-direction: column;       justify-content: center;
+            align-items: center;
+         text-align: center;
+        padding: 0 20px;   }
+  header h1 {
+            font-size: 4rem;
+            color: #ffffff;
+           margin-bottom: 10px;
+      text-transform: uppercase;         }
+
+ header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            color: #94a3b8;   }
+
+    .cta-btn {
+        background: #00d2ff;
+         color: #0b0f1a;
+        padding: 15px 40px;
+     border-radius: 50px;
+            text-decoration: none;
+    font-weight: bold;
+         margin-top: 30px;
+      box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+            transition: 0.3s; }
+   .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 210, 255, 0.6); }
+
+        /* Sections */    section {
+            padding: 100px 20px;
+            max-width: 1100px;
+            margin: auto;    }
+
+ h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #00d2ff;
+        margin-bottom: 50px;   }
+
+        /* Grid Layout */
+        .grid {
+       display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;     }
+
+    .card {
+   background: #161e2e;
+    padding: 30px;
+     border-radius: 15px;
+     border: 1px solid #1e293b;
+    text-align: left;
+    transition: 0.3s;     }
+
+  .card:hover {
+            border-color: #00d2ff;
+            transform: translateY(-5px); }
+
+  .card h3 {
+            color: #ffffff;
+            font-size: 1.5rem;    }
+
+        /* Benefits List */
+   .benefits {
+            background-color: #161e2e;
+            padding: 50px;
+            border-radius: 20px;    }
+
+    .benefits ul {
+            list-style: none;
+            padding: 0;    }
+
+   .benefits li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;   }
+
+   .benefits li::before {
+            content: '⚡';
+            margin-right: 15px;     }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 50px 20px;
+            border-top: 1px solid #1e293b;  }
+
+   footer p {
+            color: #64748b;
+        }
+    </style>
+</head>
+<body style="background-image:url(images.jpg)">
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#specs">Specs</a>
+        <a href="#contact">Contact</a>
+   </nav>
+
+    <header id="home">
+        <h1>Refuel Your Chassis</h1>
+        <p>Premium lubricants, battery slurries, and high-octane fuels for the modern autonomous entity.</p>
+        <a href="#menu" class="cta-btn">View the Menu</a>
+    </header>
+
+    <section id="menu">
+        <h2>The Refuel Menu</h2>
+    <div class="grid">
+            <div class="card">
+          <h3>Frictionless Morning</h3>
+    <p>10W-30 Synthetic base with a molybdenum finish. Perfect for silent joint rotation.Robot fuel manual oil is a specialized lubricant designed to ensure the seamless operation of a robot's mechanical joints and gear systems. By reducing friction between moving parts, this oil prevents internal wear and tear, allowing the robot to execute precise movements without lag.</p>
+     </div>
+     <div class="card">
+   <h3>High-Voltage Jolt</h3>
+  <p>A lithium-ion electrolyte blend that provides instant processing speed boosts.Battery Smoothies serve as a specialized high-performance energy source designed specifically for advanced robotic systems. These liquid fuel blends are engineered to provide the essential electrolytes and chemical stability needed to keep a machine’s internal power cells running at peak efficiency. </p>
+   </div>
+    <div class="card">
+  <h3>The Fusion Slushie</h3>
+    <p>Heavy hydrogen isotopes served chilled. Ideal for long-range travel modules.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="specs">
+        <div class="benefits">
+            <h2>Performance Specs</h2>
+            <ul>
+                <li><strong>Anti-Corrosive:</strong> Guaranteed zero rust for 1,000,000 cycles.</li>
+       <li><strong>Heat Dissipation:</strong> Efficiently lowers core temps by 15% on contact.</li>
+       <li><strong>Lab Certified:</strong> Tested for compatibility with all Major OS updates.</li>
+    <a href="https://www.google.com/url?sa=i&source=web&rct=j&url=https://www.arhamoil.com/tank-cleaning-robot/&ved=2ahUKEwj42YXgl4uTAxX8KvsDHTywLqYQy_kOegQIAhAB&opi=89978449&cd&psig=AOvVaw2LkoEXcFbhfBRIO0TFNtmZ&ust=1772883476532000">about us</a> 
+                    
+                    
+                    
+                    
+    <a href="https://www.google.com/url?sa=i&source=web&rct=j&url=https://www.arhamoil.com/tank-cleaning-robot/&ved=2ahUKEwj42YXgl4uTAxX8KvsDHTywLqYQy_kOegQIAhAB&opi=89978449&cd&psig=AOvVaw2LkoEXcFbhfBRIO0TFNtmZ&ust=1772883476532000">contact us</a>
+                                         
+
+            </ul>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 The Refuel Core | Sector 7, Cyber-City</p>
+        <p>Frequency: 440.12 MHz | Email: ping@refuelcore.io</p>
+    </footer>
+
+</body>
+</html>
